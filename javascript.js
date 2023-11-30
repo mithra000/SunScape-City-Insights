@@ -321,7 +321,7 @@ mobileFindMyLocationLink.addEventListener("click", () => {
 
 
 function reverseGeocode(latitude, longitude) {
-  const apiUrl = `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`;
+  const apiUrl = `https://geocode.maps.co/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`;
 
   // Make a request to the OpenStreetMap Nominatim API
   fetch(apiUrl)
