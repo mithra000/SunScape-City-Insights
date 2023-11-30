@@ -1,0 +1,538 @@
+/******************** Header style  ********************/
+.nav-header {
+  display: flex;
+  justify-content: center;
+  background-color: #070857;
+  border-bottom: 1px solid rgb(243, 243, 243);
+}
+
+@media screen and (max-width: 768px) {
+  .nav-header {
+    flex-direction: column;
+    align-items: center;
+    border-bottom-style: none;
+  }
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1110px;
+  /* padding-top: 10px; */
+  padding-bottom: 10px;
+  /* border: 1px solid red; */
+}
+@media screen and (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+  }
+}
+
+.nav-bar-mobile-logo-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar-mobile-logo-container {
+    display: none;
+  }
+}
+
+.nav-bar-large-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1110px;
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 767px) {
+  .nav-bar-large-container {
+    display: none;
+  }
+}
+
+.website-logo {
+  width: 120px;
+  height: 100px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  flex: 1;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-menu {
+    display: none;
+  }
+}
+.nav-menu-mobile-width {
+  width: 80%;
+}
+.nav-menu-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-menu-mobile {
+    display: none;
+  }
+}
+
+.nav-menu-list-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.nav-menu-item {
+  font-family: "Roboto";
+  text-decoration: none;
+  margin: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #eea65a;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .nav-link {
+    font-size: 12px;
+  }
+}
+
+.nav-menu-item-mobile {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.nav-mobile-btn-container {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+}
+
+.nav-mobile-btn {
+  border: none;
+  padding: 0px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  color: #eea65a;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-mobile-btn {
+    display: none;
+  }
+}
+.nav-bar-image {
+  width: 24px;
+}
+.hambarge-bars {
+  color: #fff;
+}
+.hambar-btn {
+  display: none;
+}
+.cancel-btn {
+  display: none;
+}
+
+/*######################## Search container Styles ####################*/
+
+.search-bg-container {
+  background-image: url("./Images/home_bg_image.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .search-bg-container {
+    height: 75vh;
+  }
+}
+.search-container {
+  margin-left: 8%;
+}
+@media screen and (max-width: 767px) {
+  .search-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+.welcome-heading {
+  margin: 0px;
+  font-weight: 900;
+  font-size: 2.3rem;
+  color: orange;
+  font-family: "Courier New", Courier, monospace;
+}
+@media screen and (max-width: 767px) {
+  .welcome-heading {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: rgb(255, 170, 0);
+  }
+}
+.welcome-description {
+  margin: 10px 0px 4px;
+  font-size: 14px;
+  color: rgb(96, 87, 87);
+  font-style: italic;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .welcome-description {
+    font-size: 11px;
+    color: #fff;
+  }
+}
+.search-box {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  outline: none;
+  margin-top: 1.5rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  margin-right: 1rem;
+}
+@media screen and (max-width: 767px) {
+  .search-box {
+    padding: 7px;
+  }
+}
+.search-btn {
+  background-color: aqua;
+  height: 34px;
+  width: 80px;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  font-family: monospace;
+}
+.search-btn:hover {
+  color: darkolivegreen;
+  transition: 800ms;
+}
+@media screen and (max-width: 767px) {
+  .search-btn {
+    height: 28px;
+    width: 65px;
+  }
+}
+.find-my-location-btn {
+  height: 32px;
+  padding: 0rem 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  margin-top: 2.5rem;
+  color: #292626;
+  font-family: monospace;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.find-my-location-btn:hover {
+  opacity: 1;
+}
+@media screen and (max-width: 767px) {
+  .find-my-location-btn {
+    height: 28px;
+    margin-top: 1rem;
+  }
+}
+
+/* ----------------------Content container styles------------------------*/
+
+.content-bg-container {
+  background-color: #070857;
+}
+.content-container {
+  width: 85%;
+  margin: auto;
+}
+.content-heading {
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 23px;
+  margin-top: 0px;
+  padding-top: 15px;
+}
+.activities-photography-travel-farming-container {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .activities-photography-travel-farming-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.activities-photography-container {
+  margin-right: 1.5rem;
+}
+.description {
+  color: #dad4d4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 2;
+}
+.last-description {
+  padding-bottom: 4rem;
+  margin: 0px;
+}
+
+/*========================= Footer container styles  =============================*/
+
+.footer-container {
+  background-image: url("./Images/footer-bg-image1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-right-description {
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  opacity: 1;
+  margin-top: 8rem;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Explorer Container Styles~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  */
+
+.explore-container {
+  background-color: #1e1f63;
+  padding: 3rem 4rem;
+}
+@media screen and (max-width: 767px) {
+  .explore-container {
+    padding: 1.5rem 2rem;
+  }
+}
+.sunrise-sunset-heading {
+  margin: 0px;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .sunrise-sunset-heading {
+    font-size: 25px;
+  }
+}
+.sunrise-sunset-description {
+  color: #7a9fd0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.sunrise-and-sunset-btn-container {
+  text-align: end;
+}
+.btn {
+  height: 28px;
+  border: none;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.sunrise-btn {
+  background-color: orange;
+  opacity: 0.7;
+}
+.sunrise-btn:hover {
+  opacity: 1;
+}
+.sunset-btn {
+  background-color: black;
+  color: #fff;
+  opacity: 0.7;
+}
+.sunset-btn:hover {
+  opacity: 1;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!! Sunrise and Sunset Containers Styeles!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.sunrise-container {
+  margin-top: 3rem;
+  /* border: 1px solid green; */
+  /* position: relative; */
+}
+@media screen and (max-width: 767px) {
+  .sunrise-container {
+    margin-top: 1rem;
+  }
+}
+/* .sunrise-bg-image {
+  width: 100%;
+  opacity: 0.5;
+  border-radius: 8px;
+  height: 500px;
+}
+.sunrise-image-contaienr {
+  position: relative;
+  overflow: hidden;
+} */
+.background {
+  background-image: 
+    url("./Images/sunrise-bg.jpg");
+}
+.sunrise-background {
+  background-image:
+    url("./Images/sunrise-bg.jpg");
+}
+.sunset-background {
+  background-image:
+    url("./Images/sunset-bg.jpg");
+}
+.sunrise-content-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0px;
+  border-radius: 10px;
+}
+
+.day-heading {
+  color: #dad4d4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  margin: 0px;
+  opacity: 1;
+}
+@media screen and (max-width: 767px) {
+  .day-heading {
+    font-size: 22px;
+  }
+}
+.date {
+  font-size: 12px;
+  font-weight: 800;
+  font-style: italic;
+  color: #d8dadc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.sun-image {
+  width: 130px;
+}
+.day-type-heading {
+  font-size: 24px;
+  margin: 0px;
+  margin-top: 20px;
+  font-weight: 800;
+  font-style: italic;
+  color: orange;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.day-type-time {
+  font-size: 24px;
+  margin: 0px;
+  /* margin-top: 20px; */
+  font-weight: 800;
+  font-style: italic;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.first-day-type-time {
+  font-size: 16px;
+  margin: 0px;
+  margin-top: 5px;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.day-type-description {
+  font-size: 16px;
+  margin-top: 35px;
+  font-weight: 600;
+  font-style: italic;
+  color: #d2cdcd;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.day-length-solar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.day-length {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  color: orange;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.solar-noon {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  color: orange;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.timezone {
+  align-self: flex-end;
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  color: orange;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+/* ++++++++++++++++++++++++++++ Functionality Style +++++++++++++++++ */
+.sunrise-main-container {
+  display: none;
+}
+.sunset-main-container {
+  display: none;
+}
